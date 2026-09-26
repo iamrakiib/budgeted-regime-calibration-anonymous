@@ -17,18 +17,30 @@ reported experimental protocol.
 ## Repository structure
 
 ```text
-.
+budgeted-regime-calibration-anonymous/
+├── .gitignore
+├── LICENSE
+├── README.md
+├── requirements.txt
 ├── brc_core.py
 ├── dependency_paths.py
-├── main/
-│   ├── tabular/
-│   ├── image/
-│   │   ├── cifar100_vit/
-│   │   ├── cifar100_resnet/
-│   │   └── imagenet/
-│   └── regression/
-├── third_party/
-│   └── README.md
-├── THIRD_PARTY_DEPENDENCIES.md
-├── requirements.txt
-└── .gitignore
+└── main/
+    ├── tabular/
+    │   ├── data_models.py
+    │   └── run_final_tabular.py
+    │
+    ├── image/
+    │   ├── cifar100_vit/
+    │   │   └── run_cifar100_vit_brc.py
+    │   │
+    │   ├── cifar100_resnet/
+    │   │   ├── data_models.py
+    │   │   ├── validation_common.py
+    │   │   └── run_cifar100_resnet_corrected.py
+    │   │
+    │   └── imagenet/
+    │       └── run_imagenet_brc.py
+    │
+    └── regression/
+        ├── matched_data_models.py
+        └── run_remaining_literature_baselines.py
