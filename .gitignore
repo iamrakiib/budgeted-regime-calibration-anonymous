@@ -1,0 +1,31 @@
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.venv/
+venv/
+.env
+.DS_Store
+.ipynb_checkpoints/
+
+# Generated experiment artifacts
+results/
+outputs/
+cache/
+caches/
+checkpoints/
+*.csv
+*.json
+*.npz
+*.npy
+*.pt
+*.pth
+*.pkl
+*.joblib
+*.zip
+
+# Optional local third-party source trees are not committed here.
+third_party/class-conditional-conformal-main/
+third_party/clover-main/
+third_party/FeatureCP-main/
+third_party/Energy-Based-Conformal-Classification-main/
